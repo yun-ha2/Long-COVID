@@ -1,0 +1,43 @@
+samples_tsv: "samples.tsv"
+outdir: "results"
+
+trimmer: "none"             # none | trim_galore | trimmomatic
+aligner: "hisat2"           # hisat2 | star
+quantifier: "featurecounts" # featurecounts | htseq
+multiqc: true
+
+threads:
+  fastqc: 4
+  trim: 6
+  align: 16
+  samtools: 8
+  quant: 8
+  multiqc: 2
+
+reference:
+  hisat2_index: "/path/to/hisat2/index/prefix/genome"
+  star_index: "/path/to/star/genomeDir"
+  gtf: "/path/to/annotation.gtf"
+
+fastqc:
+  extra: ""
+
+trim_galore:
+  extra: "--quality 20 --length 20"
+
+trimmomatic:
+  adapters: null
+  extra: "LEADING:3 TRAILING:3 SLIDINGWINDOW:4:20 MINLEN:20"
+
+hisat2:
+  extra: "--dta --rna-strandness RF"
+
+star:
+  extra: "--twopassMode Basic --outSAMtype BAM Unsorted"
+
+featurecounts:
+  extra: "-p -B -C -t exon -g gene_id"
+
+htseq:
+  extra: "--type exon --idattr gene_id --mode union --stranded reverse"
+
