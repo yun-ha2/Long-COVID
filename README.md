@@ -1,5 +1,9 @@
 # Long-COVID
 
+<p align="center">
+  <img src="figures/figure1.png" width="700">
+</p>
+
 ## RNA-seq Analysis Overview
 
 ### Workflow Management with Snakemake
