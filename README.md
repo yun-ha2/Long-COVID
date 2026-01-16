@@ -9,13 +9,20 @@ To investigate transcriptional changes underlying these long-term effects, RNA-s
 
 ---
 
+## Background
+
+### Long COVID
+text 
+
+---
+
 ## RNA-seq Analysis Overview
 
 ### NGS Pipeline 
 This repository includes a Snakemake-based RNA-seq preprocessing pipeline that performs quality control, optional trimming, genome alignment, and gene-level quantification.  
 Pipeline behavior is configured through `config/samples.tsv` and `config/config.yaml`.
 
-#### Samples (config/samples.tsv)
+#### Samples Definition (config/samples.tsv)
 Only three columns are required:
 ```tsv
 sample	fq1	fq2
@@ -35,3 +42,5 @@ quantifier: "featurecounts" # featurecounts | htseq
 ```bash
 snakemake --use-conda -j 32
 ```
+
+### 
