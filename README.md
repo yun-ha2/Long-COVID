@@ -46,3 +46,16 @@ snakemake --use-conda -j 32
 ## Results
 
 
+### Gene Pattern Analysis
+
+
+
+### DEGs Analysis
+
+
+### Go Term
+
+
+
+### Gene Network
+
