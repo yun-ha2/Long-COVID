@@ -1,0 +1,26 @@
+configfile: "config/config.yaml"
+
+include: "rules/common.smk"
+include: "rules/fastqc.smk"
+include: "rules/trim_galore.smk"
+include: "rules/trimmomatic.smk"
+include: "rules/hisat2.smk"
+include: "rules/star.smk"
+include: "rules/samtools.smk"
+include: "rules/featurecounts.smk"
+include: "rules/htseq.smk"
+include: "rules/multiqc.smk"
+
+rule all:
+    input:
+        expand(f"{OUTDIR}/qc/fastqc/{{sample}}_R1_fastqc.html", sample=SAMPLES),
+        expand(f"{OUTDIR}/qc/fastqc/{{sample}}_R2_fastqc.html", sample=SAMPLES),
+
+        expand(f"{OUTDIR}/align/{{sample}}.sorted.bam", sample=SAMPLES),
+        expand(f"{OUTDIR}/align/{{sample}}.sorted.bam.bai", sample=SAMPLES),
+        expand(f"{OUTDIR}/align/{{sample}}.flagstat.txt", sample=SAMPLES),
+
+        expand(f"{OUTDIR}/counts/{{sample}}.counts.txt", sample=SAMPLES),
+
+        (f"{OUTDIR}/qc/multiqc/multiqc_report.html" if config.get("multiqc", False) else [])
+
