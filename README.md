@@ -11,12 +11,28 @@ To investigate transcriptional changes underlying these long-term effects, RNA-s
 
 ## RNA-seq Analysis Overview
 
-### Workflow with Snakemake
-The RNA-seq analysis workflow was implemented using Snakemake, enabling reproducible, scalable, and automated execution of read processing and quantification steps.
+### NGS Pipeline 
+This repository includes a Snakemake-based RNA-seq preprocessing pipeline that performs quality control, optional trimming, genome alignment, and gene-level quantification.  
+Pipeline behavior is configured through `samples.tsv` and `config/config.yaml`.
 
-All software dependencies were managed via Conda, and analysis parameters were controlled through a centralized configuration file.
+#### Input: `samples.tsv`
 
+```tsv
+sample	fq1	fq2
+0-1	0-1_1.fq.gz	0-1_2.fq.gz
+0-2	0-2_1.fq.gz	0-2_2.fq.gz
+```
+#### Configuration: tool selection (config/config.yaml)
+
+```text
+trimmer: "none"             # none | trim_galore | trimmomatic
+aligner: "hisat2"           # hisat2 | star
+quantifier: "featurecounts" # featurecounts | htseq
 ### Pipeline Execution
+```
+
+#### Execution
+
 ```bash
 snakemake --use-conda -j 32
 ```
