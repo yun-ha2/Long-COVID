@@ -16,19 +16,18 @@ This repository includes a Snakemake-based RNA-seq preprocessing pipeline that p
 Pipeline behavior is configured through `samples.tsv` and `config/config.yaml`.
 
 #### Input: `samples.tsv`
-
+Only three columns are required:
 ```tsv
 sample	fq1	fq2
 0-1	0-1_1.fq.gz	0-1_2.fq.gz
 0-2	0-2_1.fq.gz	0-2_2.fq.gz
 ```
 #### Configuration: tool selection (config/config.yaml)
-
+Tool selection can be changed without modifying the workflow code:
 ```text
 trimmer: "none"             # none | trim_galore | trimmomatic
 aligner: "hisat2"           # hisat2 | star
 quantifier: "featurecounts" # featurecounts | htseq
-### Pipeline Execution
 ```
 
 #### Execution
