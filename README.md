@@ -4,7 +4,7 @@ Long COVID refers to the persistence of neurological and cognitive symptoms afte
 
 To investigate transcriptional changes underlying these long-term effects, RNA-seq analysis was performed on brain tissues from a SARS-CoV-2 mouse model.
 <p align="center">
-  <img src="figures/figure1.png" width="300">
+  <img src="figures/figure3.png" width="300">
 </p>
 
 ---
