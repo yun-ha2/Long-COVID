@@ -29,7 +29,7 @@ Pipeline behavior is configured through `config/samples.tsv` and `config/config.
 #### Samples Definition (config/samples.tsv)
 Only three columns are required:
 ```tsv
-sample      fq1                fq2
+Sample      fq1                fq2
 sampleA     sampleA_1.fq.gz    sampleA_2.fq.gz
 sampleB     sampleB_1.fq.gz    sampleB_2.fq.gz
 ```
