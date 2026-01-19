@@ -29,9 +29,9 @@ Pipeline behavior is configured through `config/samples.tsv` and `config/config.
 #### Samples Definition (config/samples.tsv)
 Only three columns are required:
 ```tsv
-sample	fq1	fq2
-0-1	0-1_1.fq.gz	0-1_2.fq.gz
-0-2	0-2_1.fq.gz	0-2_2.fq.gz
+sample      fq1                fq2
+sampleA     sampleA_1.fq.gz    sampleA_2.fq.gz
+sampleB     sampleB_1.fq.gz    sampleB_2.fq.gz
 ```
 #### Configuration: tool selection (config/config.yaml)
 Tool selection can be changed without modifying the workflow code:
