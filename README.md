@@ -48,7 +48,7 @@ snakemake --use-conda -j 32
 
 ### Gene Pattern Analysis
 <p align="left">
-  <img src="figures/figure2.png" width="700">
+  <img src="figures/figure2.png" width="1000">
 </p>
 
 ---
@@ -56,14 +56,14 @@ snakemake --use-conda -j 32
 
 ### DEGs Analysis
 <p align="left">
-  <img src="figures/figure3.png" width="700">
+  <img src="figures/figure3.png" width="1000">
 </p>
 
 ---
 
 ### Go Term
 <p align="left">
-  <img src="figures/figure4.png" width="700">
+  <img src="figures/figure4.png" width="1000">
 </p>
 
 ---
