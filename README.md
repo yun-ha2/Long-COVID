@@ -47,15 +47,31 @@ snakemake --use-conda -j 32
 
 
 ### Gene Pattern Analysis
+<p align="center">
+  <img src="figures/figure2.png" width="300">
+</p>
 
+---
 
 
 ### DEGs Analysis
+<p align="center">
+  <img src="figures/figure3.png" width="300">
+</p>
 
+---
 
 ### Go Term
+<p align="center">
+  <img src="figures/figure4.png" width="300">
+</p>
 
+---
 
 
 ### Gene Network
+<p align="center">
+  <img src="figures/figure5.png" width="300">
+</p>
 
+---
