@@ -47,10 +47,21 @@ snakemake --use-conda -j 32
 
 
 ### Gene Pattern Analysis
+
+To identify candidate genes associated with temporal transcriptional changes after SARS-CoV-2 infection, we performed a gene pattern analysis integrating WGCNA and DESeq2.
+
 <p align="left">
   <img src="figures/figure2.png" width="1000">
 </p>
 
+- WGCNA was used to cluster genes into co-expression modules based on their expression dynamics across multiple DPI time points.
+  
+- We specifically focused on modules showing pronounced expression changes at DPI 6, representing early transcriptional responses to infection.
+
+- In parallel, differential expression analysis using DESeq2 identified genes that were significantly altered at DPI 6 relative to mock controls.
+
+- By intersecting DPI 6–associated co-expression modules with differentially expressed genes, we prioritized candidate genes exhibiting coherent early expression patterns and potential long-term regulatory relevance.
+  
 ---
 
 
