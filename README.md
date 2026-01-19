@@ -12,7 +12,11 @@ To investigate transcriptional changes underlying these long-term effects, RNA-s
 ## Background
 
 ### Long COVID
-text 
+
+- Long COVID is frequently accompanied by persistent neurological symptoms, including cognitive impairment, fatigue, and sleep disturbances, suggesting long-lasting disruption of neural circuits after SARS-CoV-2 infection.
+- Although neuroinflammation and viral neuroinvasion have been implicated, these mechanisms do not fully explain the specificity and persistence of neurological sequelae.
+- Given the central role of hypothalamic neuropeptide signaling in regulating arousal, neuronal survival, and homeostasis, we hypothesized that SARS-CoV-2 selectively disrupts this regulatory system, leading to sustained cortical neuronal dysfunction.
+- To characterize SARS-CoV-2–induced neurological alterations, whole-brain samples from infected mouse models were collected across multiple time points (DPI 0, 6, 15, 30, 60, and 90). Bulk RNA-seq was used to profile time-dependent transcriptional changes, with particular emphasis on early responses at DPI 6.
 
 ---
 
